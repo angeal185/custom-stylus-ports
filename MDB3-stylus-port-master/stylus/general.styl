@@ -1,0 +1,212 @@
+body
+  font-family: Roboto, sans-serif
+  overflow: auto !important
+
+span.badge-md
+  min-width: 3rem
+  padding: 0 6px
+  text-align: center
+  font-size: 1rem
+  line-height: inherit
+  color: #757575
+  position: absolute
+  right: 15px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+span.badge-md.new
+  font-weight: 300
+  font-size: 0.8rem
+  color: #fff
+  background-color: #4285F4
+  border-radius: 2px
+
+span.badge-md.new:after
+  content: " new"
+
+a
+  color: #039be5
+  text-decoration: none
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+
+a:hover,
+a:focus
+  text-decoration: none
+
+ul
+  padding: 0
+  list-style-type: none
+
+ul li
+  list-style-type: none
+
+i
+  line-height: inherit
+
+i.left
+  float: left
+  margin-right: 10px
+
+i.right
+  float: right
+  margin-left: 10px
+
+i.tiny
+  font-size: 1rem
+
+i.small
+  font-size: 2rem
+
+i.medium
+  font-size: 4rem
+
+i.large
+  font-size: 6rem
+
+.collection
+  margin: 0.5rem 0 1rem 0
+  border: 1px solid #e0e0e0
+  border-radius: 2px
+  overflow: hidden
+  position: relative
+
+.collection .collection-item
+  background-color: #fff
+  line-height: 1.5rem
+  padding: 10px 20px
+  margin: 0
+  border-bottom: 1px solid #e0e0e0
+
+.collection .collection-item.avatar
+  min-height: 84px
+  padding-left: 72px
+  position: relative
+
+.collection .collection-item.avatar .circle
+  position: absolute
+  width: 42px
+  height: 42px
+  overflow: hidden
+  left: 15px
+  display: inline-block
+  vertical-align: middle
+
+.collection .collection-item.avatar i.circle
+  font-size: 18px
+  line-height: 42px
+  color: #fff
+  background-color: #999
+  text-align: center
+
+.collection .collection-item.avatar .title
+  font-size: 16px
+
+.collection .collection-item.avatar p
+  margin: 0
+
+.collection .collection-item.avatar .secondary-content
+  position: absolute
+  top: 16px
+  right: 16px
+
+.collection .collection-item:last-child
+  border-bottom: none
+
+.collection .collection-item.active
+  background-color: #4285F4
+  color: white
+
+.collection a.collection-item
+  display: block
+  -webkit-transition: 0.25s
+  -moz-transition: 0.25s
+  -o-transition: 0.25s
+  -ms-transition: 0.25s
+  transition: 0.25s
+  color: #4285F4
+
+.collection a.collection-item:not(.active):hover
+  background-color: #ddd
+
+.collection.with-header .collection-header
+  background-color: #fff
+  border-bottom: 1px solid #e0e0e0
+  padding: 10px 20px
+
+.collection.with-header .collection-item
+  padding-left: 30px
+
+.collection.with-header .collection-item.avatar
+  padding-left: 72px
+
+.secondary-content
+  float: right
+  color: #4285F4
+
+.label
+  border-radius: 0
+
+footer.page-footer
+  margin-top: 3em
+  font-weight: 300
+
+footer.page-footer .link-section
+  padding-bottom: 20px
+
+footer.page-footer .footer-content
+  padding: 2em
+
+footer.page-footer .footer-copyright
+  overflow: hidden
+  height: 50px
+  line-height: 50px
+  color: rgba(255, 255, 255, 0.8)
+
+footer.page-footer .column-title
+  text-transform: uppercase
+  margin-top: 15px
+
+footer.page-footer a
+  font-weight: 300
+  font-size: 18px
+  line-height: 40px
+  color: #fff
+
+footer.page-footer .social-section
+  padding-top: 15px
+  padding-bottom: 15px
+  text-align: center
+
+footer.page-footer .call-to-action
+  text-align: center
+  padding-bottom: 1.5rem
+  padding-top: 1.5rem
+
+footer.page-footer .call-to-action ul
+  margin-bottom: 0
+
+footer.page-footer .bordered
+  border-bottom: 1px solid rgba(158, 158, 158, 0.7)
+
+footer.page-footer .padd-bott
+  padding-bottom: 30px
+
+footer.page-footer .pad-top
+  padding-top: 30px
+
+@media only screen and (max-width: 768px)
+  footer.page-footer .column-title
+    margin-top: 2em
+
+.modal-content
+  border-radius: 2px
+
+/**
+ * Shifting bacground fix
+ */
+body.modal-open
+  overflow: inherit
+  padding-right: 0 !important
+
